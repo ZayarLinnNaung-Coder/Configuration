@@ -1,0 +1,17 @@
+
+## Configuring info endpoint
+info:
+	app:
+		name: Demo Service
+		description: Demo Service Application
+		version: 1.0.0
+
+## Eureka Configuration ##
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://host.docker.internal:9002/eureka/
